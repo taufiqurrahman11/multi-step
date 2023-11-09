@@ -1,0 +1,99 @@
+@import '@styles/base';
+
+.container {
+    box-sizing: border-box;
+    margin: 0 30px 0;
+
+    .header {
+        padding-top: 30px;
+        margin-bottom: 30px;
+
+        .title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: $color-dark-blue;
+        }
+
+        .subTitle {
+            font-size: 0.7rem;
+            font-weight: 300;
+            color: grey;
+        }
+    }
+
+    .cardContainer {
+        @include directionY;
+        background-color: whitesmoke;
+
+        .cardWrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+
+            .product {
+                font-size: 16px;
+                color: $color-dark-blue;
+                font-weight: bold;
+            }
+
+            .change {
+                font-size: 12px;
+                color: grey;
+            }
+
+            .productTambahan {
+                font-size: 12px;
+                color: grey;
+            }
+
+            .priceTambahan {
+                font-size: 12px;
+                color: black;
+                font-weight: 400;
+            }
+        }        
+    }
+
+    .totalContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px 15px;
+
+        .total {
+            font-size: 12px;
+            color: grey;
+        }
+        
+        .price {
+            font-size: 24px;
+            color: rgb(43, 0, 108);
+            font-weight: bold;
+        }
+    }
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        .next {
+            width: 25%;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(43, 0, 108);
+            cursor: pointer;
+            border: none;
+        }
+
+        .goback {
+            width: 25%;
+            padding: 10px;
+            border-radius: 5px;
+            color: slategrey;
+            background-color: rgb(228, 228, 228);
+            cursor: pointer;
+            border: none;
+        }
+    }
+}

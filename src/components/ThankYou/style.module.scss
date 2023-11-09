@@ -1,0 +1,25 @@
+@import '@styles/base';
+
+.container {
+    @include center;
+    @include directionY;
+    width: 100%;
+
+    img {
+        margin-bottom: 1rem;
+    }
+
+    .thankYou {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: $color-dark-blue;
+    }
+
+    .thanksLong {
+        width: 70%;
+        @include center;
+        text-align: center;
+        font-size: 0.7rem;
+        color: grey;
+    }
+}

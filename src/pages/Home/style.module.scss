@@ -1,1 +1,15 @@
 @import '@styles/base';
+
+main {
+    height: calc(100vh - 70px);
+    @include center;
+
+    .container {
+        padding: 15px;
+        width: 65%;
+        height: max-content;
+        background-color: white;
+        border-radius: 10px;
+        @include directionX;
+    }
+}

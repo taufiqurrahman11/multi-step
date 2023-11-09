@@ -1,0 +1,64 @@
+@import '@styles/base';
+
+.container {
+    width: 300px;
+    height: 70vh;
+    // border: 1px solid red;
+    padding: 15px;
+    background-image: url(../../assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .stepWrapper {
+        @include directionY;
+
+        .stepInfo {
+            @include directionX;
+            margin-bottom: 20px;
+    
+            .numberWrap {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: transparent;
+                border: 2px solid $color-light-blue;
+                text-align: center;
+                @include center;
+
+                .number{
+                    color:white;
+                }
+            }
+    
+            .text {
+                margin-left: 12px;
+    
+                .step {
+                    font-size: 12px;
+                    color: $color-white-fade;
+                    font-weight: 400;
+                    margin-bottom: -3px;
+                }
+    
+                .descStep {
+                    font: 14px;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        // Step Active
+        .stepInfo.activeStep {
+            .numberWrap {
+                background-color: $color-light-blue;
+        
+                .number {
+                    color: $color-dark-blue;
+                }
+            }
+        }
+    }
+
+
+}
